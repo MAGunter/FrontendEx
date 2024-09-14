@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+<div class="container">
+  <h1>Registration Form</h1>
+
+  <form>
+    <table>
+      <!-- Name -->
+      <tr>
+        <td><label for="name">Enter Name</label></td>
+        <td><input type="text" id="name" name="name"></td>
+      </tr>
+
+      <!-- Password -->
+      <tr>
+        <td><label for="password">Enter Password</label></td>
+        <td><input type="password" id="password" name="password"></td>
+      </tr>
+
+      <!-- Address -->
+      <tr>
+        <td><label for="address">Enter Address</label></td>
+        <td><textarea id="address" name="address" rows="4" cols="50"></textarea></td>
+      </tr>
+
+      <!-- Game selection -->
+      <tr>
+        <td><label>Select Game</label></td>
+        <td>
+          <label><input type="checkbox" id="hockey" name="game" value="hockey"> Hockey</label><br>
+          <label><input type="checkbox" id="football" name="game" value="football"> Football</label><br>
+          <label><input type="checkbox" id="badminton" name="game" value="badminton"> Badminton</label><br>
+          <label><input type="checkbox" id="cricket" name="game" value="cricket"> Cricket</label><br>
+          <label><input type="checkbox" id="volleyball" name="game" value="volleyball"> Volleyball</label>
+        </td>
+      </tr>
+
+      <!-- Gender -->
+      <tr>
+        <td><label>Gender</label></td>
+        <td>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+        </td>
+      </tr>
+
+      <!-- Age selection -->
+      <tr>
+        <td><label for="age">Select ur age</label></td>
+        <td>
+          <select id="age" name="age">
+            <option value="">Select</option>
+            <option value="18-25">18-25</option>
+            <option value="26-35">26-35</option>
+            <option value="36-45">36-45</option>
+            <option value="46-60">46-60</option>
+          </select>
+        </td>
+      </tr>
+
+      <!-- File upload -->
+      <tr>
+        <td><label for="photo">Select Photo</label></td>
+        <td><input type="file" id="photo" name="photo"></td>
+      </tr>
+
+      <!-- Buttons -->
+      <tr>
+        <td colspan="2" style="text-align: center;">
+          <button type="button">Click Me</button>
+          <button type="reset">Сбросить</button>
+          <button type="submit">Submit Form</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
+<footer><a href="">Link to my github</a></footer>
+</body>
+</html>
